@@ -28,7 +28,7 @@ def train(mnist):
 	y_ = tf.placeholder(tf.float32,[None,OUTPUT_NODE],name='y-input')
 	
 	weight1 = tf.Variable(tf.truncated_normal([INPUT_NODE,LAYER1_NODE], stddev = 0.1))
-	biases1 = tf.Variable(tf.constant(0.1,shap = [LAYER1_NODE]))
+	biases1 = tf.Variable(tf.constant(0.1,shape = [LAYER1_NODE]))
 	
 	weight2 = tf.Variable( tf.truncated_normal( [LAYER1_NODE,OUTPUT_NODE],stddev=0.1))
 	biases2 = tf.Variable( tf.constant(0.1,shape=[OUTPUT_NODE]))
@@ -43,7 +43,7 @@ def train(mnist):
 	
 	average_y = inference(x,variable_average,weight1,biases1,weight2,biases2)
 	
-	cross_entropy = tf.nn.sparse_softmax_cross_entropy_with_logits(y,tf.argmax(y_,1))
+	cross_entropy = tf.nn.sparse_softmax_cross_entropy_with_logits(logits=y,labels=tf.argmax(y_,1))
 	cross_entropy_mean = tf.reduce_mean(cross_entropy)
 	
 	regularizer = tf.contrib.layers.l2_regularizer(REGULARIZATION_RATE)
@@ -54,32 +54,33 @@ def train(mnist):
 	learing_rete = tf.train.exponential_decay( LEARNING_RATE_BASE, global_step,
 		mnist.train.num_examples/BATCH_SIZE, LEARNING_RATE_DECAY )
 	
-train_step = tf.train.GradientDescentOptimizer(learing_rete).minimize(loss,global_step=global_step)
+	train_step = tf.train.GradientDescentOptimizer(learing_rete).minimize(loss,	global_step = global_step)
 
-with tf.control_dependencies([train_step,variable_average_op]):
-	train_op = tf.no_op(name='train')
+	with tf.control_dependencies([train_step,variable_average_op]):
+		train_op = tf.no_op(name='train')
 
-correct_prediction = tf.equal(tf.argmax(average_y,1),tf.argmax(y_,1))
+	correct_prediction = tf.equal(tf.argmax(average_y,1),tf.argmax(y_,1))
 
-accuracy = tf.reduce_mean(tf.case(correct_prediction,tf.float32))
+	accuracy = tf.reduce_mean(tf.cast(correct_prediction,tf.float32))
 
-with tf.Session() as sess:
-	tf.initialize_all_variables().run()
-	
-	validate_feed = {x:mnist.validation.images,y:mnist,validation.labels}
-	
-	test_feed = {x:mnist.test.images,y:mnist.test.labels}
-	
-	for i in range(TRAINING_STEPS):
-		if i%100 == 0:
-			validate_acc = sess.run(accuracy,feed_dict = validate_feed)
-			print("After %d trainint step(s),validation accuracy"
-				"using average model is %g" % (i,validate_acc))
-		xs,ys = mnist.train.next_batch(BATCH_SIZE)
-		sess.run(train_op,feed_dict=(x:xs,y_:ys))
-	test_acc = sess.run(accuracy,feed_dict=test_feed)
-	print("After %d trainint step(s),validation accuracy"
-		"using average model is %g" % (TRAINING_STEPS,test_acc))
+	with tf.Session() as sess:
+		init_op=tf.global_variables_initializer()
+		sess.run(init_op)
+		
+		validate_feed = {x: mnist.validation.images, y_: mnist.validation.labels}
+		
+		test_feed = {x:mnist.test.images,y_:mnist.test.labels}
+		
+		for i in range(TRAINING_STEPS):
+			if i%100 == 0:
+				validate_acc = sess.run(accuracy,feed_dict = validate_feed)
+				print("After %d trainint step(s),validation accuracy"
+					"using average model is %g" % (i,validate_acc))
+			xs,ys = mnist.train.next_batch(BATCH_SIZE)
+			sess.run(train_op,feed_dict={x:xs,y_:ys})
+		test_acc = sess.run(accuracy,feed_dict=test_feed)
+		print("After %d trainint step(s),validation accuracy"
+			"using average model is %g" % (TRAINING_STEPS,test_acc))
 
 def main(argv=None):
 	mnist = input_data.read_data_sets('./MNIST_data', one_hot=True)
