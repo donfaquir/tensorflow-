@@ -18,8 +18,9 @@ elm = ELM(sess, batch_size, 784, hidden_num, 10)
 
 # one-step feed-forward training
 train_x, train_y = mnist.train.next_batch(batch_size)
-elm.feed(train_x, train_y)
-#elm.train();
+
+elm.train(train_x, train_y);
 
 # testing
-elm.test(mnist.test.images, mnist.test.labels)
+test_x, test_y = mnist.test.next_batch(batch_size)
+elm.test(test_x, test_y)

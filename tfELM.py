@@ -1,5 +1,6 @@
 import tensorflow as tf
 import numpy as np
+from six import integer_types, string_types
 import os
 
 omega = 1.
@@ -13,17 +14,18 @@ class ELM(object):
 		  input_len : The length of input. (L)
 		  hidden_num : The number of hidden node. (K)
 		  output_len : The length of output. (O)
-		
-		assert isinstance(input_len, np.int64), "Number of inputs must be integer"
-		assert isinstance(output_len, np.int64), "Number of outputs must be integer"
-		assert batch_size > 0, "batch_size should be positive"
 		'''
+		assert isinstance(input_len, integer_types), "Number of inputs must be integer"
+		assert isinstance(output_len, integer_types), "Number of outputs must be integer"
+		assert batch_size > 0, "batch_size should be positive"
+		
 		self._sess = sess 
 		self._batch_size = batch_size
 		self._input_len = input_len
 		self._hidden_num = hidden_num
 		self._output_len = output_len 
-
+		
+		#ensure activation function
 		if activation == 'sigmoid':
 			self.__activation = tf.nn.sigmoid
 		elif activation == 'linear' or activation == None:
@@ -80,39 +82,31 @@ class ELM(object):
 		self._accuracy = tf.reduce_mean(tf.cast(self._correct_prediction, tf.float32))
 		
 		# Finish initial  
-		self.__is_finished_feed = False
-		self.__is_trained = True
+		self.__is_trained = False
 		# Saver
 		self.__saver = tf.train.Saver()
 	
-	def feed(self, x, t):
+	def train(self, x, t):
 		'''
 		Args :
 			x : input array (N x L)
 			t : label array (N x O)
 		'''
-		if not self.__is_finished_feed : 
+		if not self.__is_trained : 
 			# Initialize variables
 			self._sess.run(tf.global_variables_initializer())
 			self._sess.run(self._assign_outputW, {self.__x:x, self.__t:t})
 			self._sess.run(self.__predict, feed_dict={self.__x: x})
-			self.__is_finished_feed = True
-	def train(self):
-		if not self.__is_finished_feed: 
-			raise Exception(
-				'please initial. '
-				'please call \'feed\' method for initialization.'
-			)
-		else:
-			print("Accuracy: {:.9f}".format(self._sess.run(self._accuracy)))
-			self.__is_trained = True
+			print("Accuracy: {:.9f}".format(self._sess.run(self._accuracy,{self.__x:x, self.__t:t})))
+			self.__is_trained  = True
+	
 	def test(self,x,t):
 		if not self.__is_trained:
 			raise Exception(
 				'Please train the neural network first. '
-				'please call \'1,feed 2,train\' methods for initialization.'
+				'please call \'train\' methods for initialization.'
 			)
 		else:
-			print("Accuracy: {:.9f}".format(self._sess.run(self._accuracy),{self.__x:x, self.__t:t}))
+			print("test Accuracy: {:.9f}".format(self._sess.run(self._accuracy,{self.__x:x, self.__t:t})))
 		
 		
