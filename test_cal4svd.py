@@ -22,14 +22,18 @@ print("为张量+1维，但是X执行的维度维-1,则不更改", sess.run(x))
 '''
 def main():
 	A = tf.constant([0,1,1,1,1,0],shape=[3,2],dtype=tf.float32)
-	H = SVD(A);
 	
-	(svd,shapexx,columns_num,row_num,A_T,A_TA,AA_T,e_ATA,v_ATA,e_AAT,v_AAT) = H.get_svd()
-	#sess = tf.InteractiveSession()
 	with tf.Session() as sess:
 		sess.run(tf.global_variables_initializer())
-	
-		print('svd = {}')
+		H = SVD(sess,A);
+		s,u,v = H.get_svd2();
+		print(s.eval())
+		print(u.eval())
+		print(v.eval())
+		#(svd,shapexx,columns_num,row_num,A_T,A_TA,AA_T,e_ATA,v_ATA,e_AAT,v_AAT) = H.get_svd()
+	#h,h2 = H.get_svd2()
+	#sess = tf.InteractiveSession()
+		'''print('svd = {}')
 		print(svd.eval())
 		
 		print('shape = {}')
@@ -53,8 +57,12 @@ def main():
 		print(e_AAT.eval())
 		print('v_AAT = {}')
 		print(v_AAT.eval())
-		''''''
-
+		
+		print('h = ')
+		print(h.eval())
+		print('h2 = ')
+		print(h2.eval())'''
+	
 main()
 '''
 if('__name__'=='__main__'):
