@@ -13,7 +13,7 @@ mnist = input_data.read_data_sets("./MNIST_data", one_hot=True)
 
 # Construct ELM
 batch_size = 5000
-hidden_num = 300
+hidden_num = 100
 wheels_num = 250
 print()
 print('--------------------------------------------------------------------------',datetime.datetime.now())
