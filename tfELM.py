@@ -1,12 +1,14 @@
+#coding=utf-8
 import tensorflow as tf
 import numpy as np
 from six import integer_types, string_types
+import datetime
 import os
 
 omega = 1.
 class ELM(object):
 
-	def __init__(self, sess, batch_size, input_len, hidden_num, output_len,activation='sigmoid'):
+	def __init__(self, sess, batch_size, input_len, hidden_num, output_len,wheels_num,activation='sigmoid'):
 		'''
 		Args:
 		  sess : TensorFlow session.
@@ -24,6 +26,7 @@ class ELM(object):
 		self._input_len = input_len
 		self._hidden_num = hidden_num
 		self._output_len = output_len 
+		self._wheels_num = wheels_num
 		
 		#ensure activation function
 		if activation == 'sigmoid':
@@ -82,9 +85,9 @@ class ELM(object):
 		self._accuracy = tf.reduce_mean(tf.cast(self._correct_prediction, tf.float32))
 		
 		# Finish initial  
-		self.__is_trained = False
+		self._is_trained = False
 		# Saver
-		self.__saver = tf.train.Saver()
+		self._saver = tf.train.Saver()
 	
 	def train(self, x, t):
 		'''
@@ -92,21 +95,38 @@ class ELM(object):
 			x : input array (N x L)
 			t : label array (N x O)
 		'''
-		if not self.__is_trained : 
+		if not self._is_trained : 
 			# Initialize variables
 			self._sess.run(tf.global_variables_initializer())
 			self._sess.run(self._assign_outputW, {self.__x:x, self.__t:t})
 			self._sess.run(self.__predict, feed_dict={self.__x: x})
-			print("Accuracy: {:.9f}".format(self._sess.run(self._accuracy,{self.__x:x, self.__t:t})))
-			self.__is_trained  = True
+			self._max_accuracy = self._sess.run(self._accuracy,{self.__x:x, self.__t:t})
+			#save_path = self._saver.save(self._sess,"./save/model.ckpt")
+			#print("Model save in->",save_path)
+			i=0
+			temp = self._wheels_num/5
+			while(i < self._wheels_num):
+				i += 1
+				self._sess.run(tf.global_variables_initializer())
+				self._sess.run(self._assign_outputW, {self.__x:x, self.__t:t})
+				self._sess.run(self.__predict, feed_dict={self.__x: x})
+				acc = self._sess.run(self._accuracy,{self.__x:x, self.__t:t})
+				if(acc > self._max_accuracy):					self._max_accuracy = acc
+					#save_path = self._saver.save(self._sess,"./save/model.ckpt")
+					#print("Model save in->",save_path)
+					print('exchange happened')
+				if(i%temp == 0):
+					print(i,'training-->',datetime.datetime.now())
+			print("Train Accuracy: {:.9f}".format(self._max_accuracy))
+			self._is_trained  = True
 	
 	def test(self,x,t):
-		if not self.__is_trained:
+		if not self._is_trained:
 			raise Exception(
 				'Please train the neural network first. '
 				'please call \'train\' methods for initialization.'
 			)
 		else:
-			print("test Accuracy: {:.9f}".format(self._sess.run(self._accuracy,{self.__x:x, self.__t:t})))
+			print("Test Accuracy: {:.9f}".format(self._sess.run(self._accuracy,{self.__x:x, self.__t:t})))
 		
 		

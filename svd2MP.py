@@ -14,7 +14,9 @@ class SVD(object):
 		
 		assert isinstance(H, tf.Tensor), "Input valuse must be Tensor" 
 		self._A = H
-		self._sess = sess;
+		#self._sess = sess;
+		self._sess = tf.InteractiveSession()
+		#sess.tf.InteractiveSession()
 		#Obtaining the dimension information of the matrix
 		self._shape = self._A.get_shape()
 		
@@ -64,5 +66,6 @@ class SVD(object):
 		return VSU_T
 		
 	def get_cutoff(self,H):
-		va = H.eval()
-		return 1e-15*va.max()
+		#va = self._sess(H.eval())
+		#return 1e-15*va.max()
+		return 1e-10*1.0

@@ -6,8 +6,8 @@ import datetime
 print()
 print('--------------------------------------------------------------------------',datetime.datetime.now())
 
-A = tf.constant([0,1,1,1,1,0],shape=[2,3],dtype=tf.float32)
-#A = tf.constant([2,4,1,3,0,0],shape=[4,2],dtype=tf.float32)
+#A = tf.constant([0,1,1,1,1,0],shape=[3,2],dtype=tf.float32)
+A = tf.constant([2,4,1,3,0,0],shape=[4,2],dtype=tf.float32)
 '''
 #The transposed of H
 A_T = tf.transpose(A)
@@ -64,9 +64,8 @@ with tf.Session() as sess:
 	d = tf.matmul(v,c)
 	print('d = v * c',end='')
 	print(d.eval())
-'''
-	MP = svd.get_MP()
-	print(MP.eval())
+
+	
 
 	print('u.eval()',end='')
 	print(u.eval())
@@ -79,14 +78,15 @@ with tf.Session() as sess:
 	print(v.eval())
 	print('s.eval-->',end='')
 	print(s.eval())
-	
+'''		
 	print('v_ATA->',end='')
 	print(v_ATA.eval())
 	print('v_AAT->',end='')
 	print(v_AAT.eval())
+
 	
-	
-	
+	MP = svd.get_MP()
+	print(MP.eval())
 
 	
 	c = tf.matmul(s,tf.transpose(u))
