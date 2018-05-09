@@ -14,9 +14,7 @@ class SVD(object):
 		
 		assert isinstance(H, tf.Tensor), "Input valuse must be Tensor" 
 		self._A = H
-		#self._sess = sess;
-		self._sess = tf.InteractiveSession()
-		#sess.tf.InteractiveSession()
+		self._sess = sess;
 		#Obtaining the dimension information of the matrix
 		self._shape = self._A.get_shape()
 		
@@ -32,13 +30,16 @@ class SVD(object):
 	
 	def get_MP(self):
 		s,u,v = self.get_svd()
-		
-		#Get the inverse of the singular value matrix
-		cutoff = self.get_cutoff(self._A)
-		for i in range(0,len(s.eval())):
-			b = s[i]>cutoff
-			if not b.eval():
-				s[i] = 0.0
+		'''
+			The following is an explanation of the official website's return type of tf.svd() function
+			<--- tensor[..., :, :] = u[..., :, :] * diag(s[..., :, :]) * transpose(conj(v[..., :, :]))    ---->
+			We can know that: get_MP() ==> transpose(v)*1.0/s*transpose(u)
+			You can verify the correctness of the current function by the following code:
+				#coding = utf-8
+				import numpy as np
+				A = [[0,1],[1,1],[1,0]]
+				print(np.linalg.pinv(A))
+		'''
 		s = 1.0/s
 		diagS = tf.diag(s)
 		
@@ -58,10 +59,13 @@ class SVD(object):
 			E = tf.concat([diagS,zero],0)
 		else:
 			E = s
+	
 		self._sess.run(tf.global_variables_initializer())
+		
 		U_T = tf.transpose(u)
 		SU_T = tf.matmul(E,U_T)
-		VSU_T = tf.matmul(v,SU_T)
+		V_T = tf.transpose(v)
+		VSU_T = tf.matmul(V_T,SU_T)
 		
 		return VSU_T
 		

@@ -1,0 +1,174 @@
+-------------------------------------------------------------------------- 2018-05-09 19:01:54.276744
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 5000
+hidden_num : 500
+first accuracy--> 0.10299999
+exchange happened
+20 training--> 2018-05-09 19:03:10.303332
+40 training--> 2018-05-09 19:04:20.387075
+60 training--> 2018-05-09 19:05:30.527248
+exchange happened
+-------------------------------------------------------------------------- 2018-05-09 20:47:36.693914
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 5000
+hidden_num : 500
+first accuracy--> 0.0954
+exchange happened
+exchange happened
+exchange happened
+20 training--> 2018-05-09 20:48:52.254992
+40 training--> 2018-05-09 20:50:01.947271
+exchange happened
+60 training--> 2018-05-09 20:51:11.582435
+-------------------------------------------------------------------------- 2018-05-09 20:57:12.611295
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 500
+hidden_num : 100
+first accuracy--> 0.12799999
+exchange happened
+20 training--> 2018-05-09 20:57:15.207504
+exchange happened
+40 training--> 2018-05-09 20:57:15.641502
+60 training--> 2018-05-09 20:57:16.096900
+80 training--> 2018-05-09 20:57:16.549938
+100 training--> 2018-05-09 20:57:17.013267
+Train Accuracy: 0.200000003
+Test Accuracy: 0.148000002
+-------------------------------------------------------------------------- 2018-05-09 20:58:22.023309
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 500
+hidden_num : 100
+first accuracy--> 0.09400001
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+100 training--> 2018-05-09 20:58:26.306799
+200 training--> 2018-05-09 20:58:28.752808
+exchange happened
+300 training--> 2018-05-09 20:58:31.349675
+400 training--> 2018-05-09 20:58:34.186463
+500 training--> 2018-05-09 20:58:37.219381
+Train Accuracy: 0.200000018
+Test Accuracy: 0.076000005
+-------------------------------------------------------------------------- 2018-05-09 20:59:04.043282
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 1000
+hidden_num : 300
+first accuracy--> 0.107999995
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+100 training--> 2018-05-09 20:59:18.972893
+exchange happened
+exchange happened
+exchange happened
+200 training--> 2018-05-09 20:59:31.880528
+300 training--> 2018-05-09 20:59:45.060893
+exchange happened
+400 training--> 2018-05-09 20:59:58.367430
+500 training--> 2018-05-09 21:00:12.804668
+Train Accuracy: 0.186000019
+Test Accuracy: 0.130999997
+-------------------------------------------------------------------------- 2018-05-09 21:03:41.410441
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 2000
+hidden_num : 300
+first accuracy--> 0.106000006
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+100 training--> 2018-05-09 21:04:21.414443
+200 training--> 2018-05-09 21:04:59.396863
+300 training--> 2018-05-09 21:05:37.143123
+-------------------------------------------------------------------------- 2018-05-09 21:06:17.575280
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 2000
+hidden_num : 300
+first accuracy--> 0.1305
+exchange happened
+exchange happened
+100 training--> 2018-05-09 21:07:00.675622
+exchange happened
+200 training--> 2018-05-09 21:07:38.510989
+300 training--> 2018-05-09 21:08:19.332474
+-------------------------------------------------------------------------- 2018-05-09 21:10:50.671780
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 1000
+hidden_num : 500
+first accuracy--> 0.062
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+100 training--> 2018-05-09 21:11:16.748173
+200 training--> 2018-05-09 21:11:41.333311
+300 training--> 2018-05-09 21:12:07.061964
+400 training--> 2018-05-09 21:12:31.931638
+500 training--> 2018-05-09 21:12:57.155632
+Train Accuracy: 0.192999989
+Test Accuracy: 0.070000000
+-------------------------------------------------------------------------- 2018-05-09 21:13:23.125557
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 1000
+hidden_num : 999
+first accuracy--> 0.092999995
+exchange happened
+100 training--> 2018-05-09 21:14:42.223984
+200 training--> 2018-05-09 21:15:58.777892
+300 training--> 2018-05-09 21:17:15.821529
+-------------------------------------------------------------------------- 2018-05-09 21:20:10.605880
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 500
+hidden_num : 400
+first accuracy--> 0.111999996
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+100 training--> 2018-05-09 21:20:21.596112
+200 training--> 2018-05-09 21:20:30.639620
+300 training--> 2018-05-09 21:20:40.034961
+exchange happened
+400 training--> 2018-05-09 21:20:49.674178
+500 training--> 2018-05-09 21:20:59.635082
+Train Accuracy: 0.202000022
+Test Accuracy: 0.101999998

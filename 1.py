@@ -6,8 +6,8 @@ import datetime
 print()
 print('--------------------------------------------------------------------------',datetime.datetime.now())
 
-#A = tf.constant([0,1,1,1,1,0],shape=[3,2],dtype=tf.float32)
-A = tf.constant([2,4,1,3,0,0],shape=[4,2],dtype=tf.float32)
+A = tf.constant([0,1,1,1,1,0],shape=[3,2],dtype=tf.float32)
+#A = tf.constant([2,4,1,3,0,0],shape=[4,2],dtype=tf.float32)
 '''
 #The transposed of H
 A_T = tf.transpose(A)
@@ -22,7 +22,21 @@ e_AAT,v_AAT = tf.self_adjoint_eig(AA_T)
 '''
 with tf.Session() as sess:
 	svd = SVD(sess,A)
+	a = svd.get_MP()
+	print(a)
+	
+	
+	'''
 	s,u,v = svd.get_svd()
+	sess.run(tf.global_variables_initializer())
+
+	
+	
+	s = 1.0/s
+	U_T = tf.transpose(u)
+	SU_T = tf.matmul(s,U_T)
+	V_T = tf.transpose(v)
+	VSU_T = tf.matmul(V_T,SU_T)
 
 	for i in range(0,len(s.eval())):
 		b = s[i]>1e-15*1.7
@@ -78,7 +92,7 @@ with tf.Session() as sess:
 	print(v.eval())
 	print('s.eval-->',end='')
 	print(s.eval())
-'''		
+	
 	print('v_ATA->',end='')
 	print(v_ATA.eval())
 	print('v_AAT->',end='')
@@ -96,8 +110,6 @@ with tf.Session() as sess:
 	print(c.get_shape())
 	
 
-
-	
 	
 	c = tf.matmul(E,tf.transpose(u))
 	print('c = E*tf.transpose(u)->',end='')
@@ -105,9 +117,6 @@ with tf.Session() as sess:
 	print('c.shape',end='')
 	print(c.get_shape())
 
-
-
-	
 
 		#The transposed of H
 	A_T = tf.transpose(A)
@@ -160,5 +169,5 @@ print('s.eval()',end='')
 	print(sess.run(e_ATA))
 	print(sess.run(e_AAT))
 				
-if('__name__' == '__main__'):'''
+	if('__name__' == '__main__'):  '''
 
