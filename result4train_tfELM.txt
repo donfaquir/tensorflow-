@@ -257,3 +257,22 @@ exchange happened
 250 training--> 2018-05-08 23:48:43.351669
 Train Accuracy: 0.660599887
 Test Accuracy: 0.499599963
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-------------------------------------------------------------------------- 2018-05-09 10:46:18.655277
+batch_size : 5000
+hidden_num : 150
+wheels_num : 250
+exchange happened
+50 training--> 2018-05-09 10:59:26.973361
+exchange happened
+100 training--> 2018-05-09 11:12:12.528396
+150 training--> 2018-05-09 11:25:00.682836
+exchange happened
+200 training--> 2018-05-09 11:37:55.140619
+250 training--> 2018-05-09 11:50:39.739954
+Train Accuracy: 0.658999920
+Test Accuracy: 0.504599929
