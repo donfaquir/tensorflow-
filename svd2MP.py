@@ -11,8 +11,12 @@ class SVD(object):
 		The input form must be the tensor of tensorflow, that is, this code can only be invoked in tensorflow environment.
 	'''
 	def __init__(self,sess,H):
-		
-		assert isinstance(H, tf.Tensor), "Input valuse must be Tensor" 
+	
+		if not (isinstance(H, tf.Tensor)):
+			if not isinstance(H, tf.Variable):
+				raise TypeError(
+						"Input valuse must be Tensor or Variable"
+					)
 		self._A = H
 		self._sess = sess;
 		#Obtaining the dimension information of the matrix
@@ -23,8 +27,6 @@ class SVD(object):
 		#Get the second dimension information of the matrix, that is, the number of columns
 		self._columns_num = self._shape[1]
 		
-		self._svd = tf.placeholder(tf.float32, shape=[self._row_num, self._columns_num])
-		
 	def get_svd(self):
 		return tf.svd(self._A,full_matrices=True)
 	
@@ -34,16 +36,11 @@ class SVD(object):
 			The following is an explanation of the official website's return type of tf.svd() function
 			<--- tensor[..., :, :] = u[..., :, :] * diag(s[..., :, :]) * transpose(conj(v[..., :, :]))    ---->
 			We can know that: get_MP() ==> transpose(v)*1.0/s*transpose(u)
-			You can verify the correctness of the current function by the following code:
-				#coding = utf-8
-				import numpy as np
-				A = [[0,1],[1,1],[1,0]]
-				print(np.linalg.pinv(A))
+			You can verify the correctness of get_MP() with the pinv() function of numpy library
 		'''
 		s = 1.0/s
 		diagS = tf.diag(s)
 		
-		self._row_num,self._columns_num = self._A.get_shape()
 		#Singular value matrices for finding generalized inverse(N*M)
 		E = tf.Variable(tf.zeros([self._columns_num,self._row_num]))
 		#Extended eigenvalue matrix,So that its dimension conforms to the requirement of multiplication with U matrix.
@@ -58,7 +55,7 @@ class SVD(object):
 			zero = tf.Variable(tf.zeros([n,m]))
 			E = tf.concat([diagS,zero],0)
 		else:
-			E = s
+			E = diagS
 	
 		self._sess.run(tf.global_variables_initializer())
 		
@@ -68,8 +65,3 @@ class SVD(object):
 		VSU_T = tf.matmul(V_T,SU_T)
 		
 		return VSU_T
-		
-	def get_cutoff(self,H):
-		#va = self._sess(H.eval())
-		#return 1e-15*va.max()
-		return 1e-10*1.0
