@@ -42,6 +42,19 @@ class ELM(object):
 
 		self.__x = tf.placeholder(tf.float32, shape=(self._batch_size, self._input_len), name='x')
 		self.__t = tf.placeholder(tf.float32, shape=(self._batch_size, self._output_len), name='t')
+		
+		self.__inputW = tf.Variable(
+			tf.random_normal([self._input_len, self._hidden_num]),
+			trainable=False, dtype=tf.float32)
+		self.__bias = tf.Variable(
+			tf.random_normal([self._hidden_num]),
+			trainable=False, dtype=tf.float32)
+		self.__outputW = tf.Variable(
+			tf.zeros([self._hidden_num, self._output_len]),
+			trainable=False, dtype=tf.float32)
+		
+		'''
+		
 		self.__inputW = tf.get_variable(
 			'inputW',
 			shape=[self._input_len, self._hidden_num],
@@ -60,8 +73,11 @@ class ELM(object):
 			initializer=tf.zeros_initializer(),
 			trainable=False,
 		)
+		
+		'''
 		# Predict
-		self.__predict = tf.matmul(self.__activation(tf.matmul(self.__x, self.__inputW) + self.__bias), self.__outputW)
+		#self.__predict = tf.matmul(self.__activation(tf.matmul(self.__x, self.__inputW) + self.__bias), self.__outputW)
+		self.__predict = tf.matmul((tf.matmul(self.__x, self.__inputW) + self.__bias), self.__outputW)
 		
 		self.H0 = tf.matmul(self.__x, self.__inputW) + self.__bias # N x L
 		self.H0_T = tf.transpose(self.H0)
@@ -98,8 +114,8 @@ class ELM(object):
 		if not self._is_trained : 
 			# Initialize variables
 			self._sess.run(tf.global_variables_initializer())
-			self._sess.run(self._assign_outputW, {self.__x:x, self.__t:t})
-			self._sess.run(self.__predict, feed_dict={self.__x: x})
+			#self._sess.run(self._assign_outputW, {self.__x:x, self.__t:t})
+			#self._sess.run(self.__predict, feed_dict={self.__x: x})
 			self._max_accuracy = self._sess.run(self._accuracy,{self.__x:x, self.__t:t})
 			#save_path = self._saver.save(self._sess,"./save/model.ckpt")
 			#print("Model save in->",save_path)
