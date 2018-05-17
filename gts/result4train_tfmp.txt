@@ -1,0 +1,393 @@
+
+-----------------------------------start time--------------------------------------- 2018-05-16 11:06:35.995270
+batch_size : 4575
+hidden_num : 100
+wheels_num : 1
+first accuracy--> 0.7066667
+exchange happened
+Train Accuracy: 0.717595696
+time---> 0:00:01.529377
+
+-----------------------------------start time--------------------------------------- 2018-05-16 11:08:21.594868
+batch_size : 4575
+hidden_num : 50
+wheels_num : 1
+first accuracy--> 0.57049185
+exchange happened
+Train Accuracy: 0.572021842
+time---> 0:00:01.516074
+
+-----------------------------------start time--------------------------------------- 2018-05-16 11:09:00.225411
+batch_size : 4575
+hidden_num : 100
+wheels_num : 1
+first accuracy--> 0.70666677
+exchange happened
+Train Accuracy: 0.717595696
+time---> 0:00:01.509805
+
+-----------------------------------start time--------------------------------------- 2018-05-16 11:11:32.474250
+batch_size : 4575
+hidden_num : 150
+wheels_num : 1
+first accuracy--> 0.7748635
+Train Accuracy: 0.774863482
+time---> 0:00:01.653170
+
+-----------------------------------start time--------------------------------------- 2018-05-16 11:22:17.774452
+batch_size : 4575
+hidden_num : 200
+wheels_num : 1
+first accuracy--> 0.8185793
+Train Accuracy: 0.818579316
+time---> 0:00:01.550700
+
+-----------------------------------start time--------------------------------------- 2018-05-16 11:25:44.857297
+batch_size : 4575
+hidden_num : 250
+wheels_num : 1
+first accuracy--> 0.84437174
+exchange happened
+Train Accuracy: 0.849836171
+time---> 0:00:01.586203
+
+-----------------------------------start time--------------------------------------- 2018-05-16 11:26:17.733814
+batch_size : 4575
+hidden_num : 300
+wheels_num : 1
+first accuracy--> 0.868634
+exchange happened
+Train Accuracy: 0.869289815
+time---> 0:00:01.688123
+
+-----------------------------------start time--------------------------------------- 2018-05-16 11:26:48.482725
+batch_size : 4575
+hidden_num : 350
+wheels_num : 1
+first accuracy--> 0.8839345
+exchange happened
+Train Accuracy: 0.886776090
+time---> 0:00:01.682420
+
+-----------------------------------start time--------------------------------------- 2018-05-16 11:27:20.692332
+batch_size : 4575
+hidden_num : 400
+wheels_num : 1
+first accuracy--> 0.90142095
+exchange happened
+Train Accuracy: 0.902951002
+time---> 0:00:01.680352
+
+-----------------------------------start time--------------------------------------- 2018-05-16 11:27:51.988416
+batch_size : 4575
+hidden_num : 450
+wheels_num : 1
+first accuracy--> 0.9130056
+exchange happened
+Train Accuracy: 0.913879812
+time---> 0:00:01.638354
+
+-----------------------------------start time--------------------------------------- 2018-05-16 11:28:20.871651
+batch_size : 4575
+hidden_num : 500
+wheels_num : 1
+first accuracy--> 0.9241531
+Train Accuracy: 0.924153090
+time---> 0:00:01.696464
+
+-----------------------------------start time--------------------------------------- 2018-05-16 12:14:56.078772
+batch_size : 4575
+hidden_num : 50
+wheels_num : 1
+first accuracy--> 0.57049185
+exchange happened
+Train Accuracy: 0.582950890
+
+-----------------------------------start time--------------------------------------- 2018-05-16 12:16:12.358236
+batch_size : 4575
+hidden_num : 50
+wheels_num : 1
+first accuracy--> 0.57049185
+exchange happened
+Train Accuracy: 0.582076609
+
+-----------------------------------start time--------------------------------------- 2018-05-16 12:16:53.729030
+batch_size : 4575
+hidden_num : 50
+wheels_num : 1
+first accuracy--> 0.57049185
+exchange happened
+Train Accuracy: 0.582076550
+
+-----------------------------------start time--------------------------------------- 2018-05-16 12:19:07.584381
+batch_size : 4575
+hidden_num : 50
+wheels_num : 1
+first accuracy--> 0.57049185
+exchange happened
+Train Accuracy: 0.584918022
+Test Accuracy: 0.534920692
+time---> 0:00:01.792883
+
+-----------------------------------start time--------------------------------------- 2018-05-16 12:47:53.562870
+batch_size : 4575
+hidden_num : 100
+wheels_num : 1
+first accuracy--> 0.71519136
+Train Accuracy: 0.715191364
+Test Accuracy: 0.661111176
+time---> 0:00:01.784120
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:11:11.872840
+batch_size : 4575
+hidden_num : 150
+wheels_num : 1
+first accuracy--> 0.7785793
+Train Accuracy: 0.778579295
+Test Accuracy: 0.750396907
+time---> 0:00:01.836497
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:12:05.961082
+batch_size : 4575
+hidden_num : 200
+wheels_num : 1
+first accuracy--> 0.812022
+exchange happened
+Train Accuracy: 0.819890797
+Test Accuracy: 0.784920692
+time---> 0:00:01.817039
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:12:55.639927
+batch_size : 4575
+hidden_num : 250
+wheels_num : 1
+first accuracy--> 0.8487433
+Train Accuracy: 0.848743320
+Test Accuracy: 0.798015952
+time---> 0:00:01.830156
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:13:48.194393
+batch_size : 4575
+hidden_num : 300
+wheels_num : 1
+first accuracy--> 0.87060124
+Train Accuracy: 0.870601237
+Test Accuracy: 0.802380979
+time---> 0:00:01.837680
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:14:24.161927
+batch_size : 4575
+hidden_num : 350
+wheels_num : 1
+first accuracy--> 0.8880876
+Train Accuracy: 0.888087571
+Test Accuracy: 0.816666722
+time---> 0:00:01.850235
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:25:57.561816
+batch_size : 4575
+hidden_num : 400
+wheels_num : 1
+first accuracy--> 0.90032804
+Train Accuracy: 0.900328040
+Test Accuracy: 0.829761922
+time---> 0:00:01.939865
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:26:37.968469
+batch_size : 4575
+hidden_num : 450
+wheels_num : 1
+first accuracy--> 0.9158471
+Train Accuracy: 0.915847123
+Test Accuracy: 0.837301612
+time---> 0:00:01.953263
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:27:11.505551
+batch_size : 4575
+hidden_num : 500
+wheels_num : 1
+first accuracy--> 0.92459035
+exchange happened
+Train Accuracy: 0.925901771
+Test Accuracy: 0.834920645
+time---> 0:00:01.933328
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:27:53.909249
+batch_size : 4575
+hidden_num : 550
+wheels_num : 1
+first accuracy--> 0.93158484
+Train Accuracy: 0.931584835
+Test Accuracy: 0.840873003
+time---> 0:00:01.969301
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:28:30.510161
+batch_size : 4575
+hidden_num : 600
+wheels_num : 1
+first accuracy--> 0.9377051
+Train Accuracy: 0.937705100
+Test Accuracy: 0.838095307
+time---> 0:00:02.014404
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:29:12.529848
+batch_size : 4575
+hidden_num : 650
+wheels_num : 1
+first accuracy--> 0.94360673
+Train Accuracy: 0.943606734
+Test Accuracy: 0.837698400
+time---> 0:00:02.040916
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:29:49.639207
+batch_size : 4575
+hidden_num : 700
+wheels_num : 1
+first accuracy--> 0.9466668
+exchange happened
+Train Accuracy: 0.947978318
+Test Accuracy: 0.840873122
+time---> 0:00:02.082797
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:30:26.727039
+batch_size : 4575
+hidden_num : 750
+wheels_num : 1
+first accuracy--> 0.9536613
+Train Accuracy: 0.953661323
+Test Accuracy: 0.839682579
+time---> 0:00:02.141786
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:31:14.574462
+batch_size : 4575
+hidden_num : 800
+wheels_num : 1
+first accuracy--> 0.9549728
+Train Accuracy: 0.954972804
+Test Accuracy: 0.832936525
+time---> 0:00:02.179718
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:38:51.994270
+batch_size : 4575
+hidden_num : 850
+wheels_num : 1
+first accuracy--> 0.95825154
+exchange happened
+Train Accuracy: 0.958251595
+Test Accuracy: 0.836507976
+time---> 0:00:02.245251
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:39:36.685656
+batch_size : 4575
+hidden_num : 900
+wheels_num : 1
+first accuracy--> 0.9606559
+Train Accuracy: 0.960655928
+Test Accuracy: 0.838888884
+time---> 0:00:02.270278
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:40:10.737257
+batch_size : 4575
+hidden_num : 950
+wheels_num : 1
+first accuracy--> 0.96218586
+exchange happened
+Train Accuracy: 0.963278830
+Test Accuracy: 0.834523916
+time---> 0:00:02.321668
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:41:26.705683
+batch_size : 4575
+hidden_num : 1000
+wheels_num : 1
+first accuracy--> 0.92000014
+exchange happened
+Train Accuracy: 0.925464630
+Test Accuracy: 0.719444394
+time---> 0:00:02.395694
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:42:02.792877
+batch_size : 4575
+hidden_num : 1050
+wheels_num : 1
+first accuracy--> 0.39519122
+exchange happened
+Train Accuracy: 0.824262381
+Test Accuracy: 0.611508012
+time---> 0:00:02.464896
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:43:13.557790
+batch_size : 4575
+hidden_num : 1100
+wheels_num : 1
+first accuracy--> 0.9350821
+Train Accuracy: 0.935082078
+Test Accuracy: 0.747222245
+time---> 0:00:02.538902
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:43:56.978580
+batch_size : 4575
+hidden_num : 1150
+wheels_num : 1
+first accuracy--> 0.54010934
+exchange happened
+Train Accuracy: 0.696393549
+Test Accuracy: 0.571428597
+time---> 0:00:02.566110
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:44:31.677666
+batch_size : 4575
+hidden_num : 1150
+wheels_num : 1
+first accuracy--> 0.9123498
+Train Accuracy: 0.912349820
+Test Accuracy: 0.098015875
+time---> 0:00:02.594654
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:45:06.069425
+batch_size : 4575
+hidden_num : 1150
+wheels_num : 1
+first accuracy--> 0.9123499
+Train Accuracy: 0.912349880
+Test Accuracy: 0.090873018
+time---> 0:00:02.569175
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:45:51.801439
+batch_size : 4575
+hidden_num : 1050
+wheels_num : 1
+first accuracy--> 0.2168306
+exchange happened
+Train Accuracy: 0.556284189
+Test Accuracy: 0.462301612
+time---> 0:00:02.457800
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:48:22.316723
+batch_size : 4575
+hidden_num : 1050
+wheels_num : 1
+first accuracy--> 0.56021863
+exchange happened
+Train Accuracy: 0.655519187
+Test Accuracy: 0.506746054
+time---> 0:00:02.484021
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:48:54.728775
+batch_size : 4575
+hidden_num : 1050
+wheels_num : 1
+first accuracy--> 0.2168306
+exchange happened
+Train Accuracy: 0.824262381
+Test Accuracy: 0.611507893
+time---> 0:00:02.455945
+
+-----------------------------------start time--------------------------------------- 2018-05-16 13:50:28.867336
+batch_size : 4575
+hidden_num : 1200
+wheels_num : 1
+first accuracy--> 0.9081969
+Train Accuracy: 0.908196926
+Test Accuracy: 0.031746034
+time---> 0:00:02.690634

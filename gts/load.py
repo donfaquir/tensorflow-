@@ -10,7 +10,7 @@ from skimage.color import rgb2gray     #rgb2gray将图片转化为灰度
 
 class Load(object):
 
-	def getLabel(self,d):
+	def getLable(self,d):
 		a = []
 		for i in range(0,62):
 			a.append(0)
@@ -23,9 +23,7 @@ class Load(object):
 		#d is every classification file
 		labels=[]
 		images=[]
-		output = []
-		for i in range(0,62):
-			output.append(0)
+		
 		for d in directories:
 			#每一类的路径
 			label_directory=os.path.join(data_directory,d)
@@ -33,7 +31,7 @@ class Load(object):
 			#file_names is every photo which is end with ".ppm"
 			for f in file_names:
 				images.append(skimage.data.imread(f))   #read image
-				labels.append(self.getLabel(int(d)))                   #read label
+				labels.append(self.getLable(int(d)))                   #read label
 				self._count += 1
 		return images,labels
 	
@@ -44,11 +42,19 @@ class Load(object):
 		self._ROOT_PATH=path
 		self._train_data_directory=os.path.join(self._ROOT_PATH,"Training")
 		self._test_data_directory=os.path.join(self._ROOT_PATH,"Testing")
-		self.images,self.labels=self.load_data(self._train_data_directory)
 		
+		self.images,self.labels=self.load_data(self._train_data_directory)
 		# Rescale the images in the `images` array
 		self.images32 = [transform.resize(image, (32, 32)) for image in self.images]
 		# Convert `images32` to an array
 		self.images32 = np.array(self.images32)
 		# Convert `images32` to grayscale
 		self.images32 = rgb2gray(self.images32)
+		
+		self.test_images,self.test_labels = self.load_data(self._test_data_directory)
+		# Rescale the images in the `images` array
+		self.test_images32 = [transform.resize(image, (32, 32)) for image in self.test_images]
+		# Convert `images32` to an array
+		self.test_images32 = np.array(self.test_images32)
+		# Convert `images32` to grayscale
+		self.test_images32 = rgb2gray(self.test_images32)

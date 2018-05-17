@@ -40,8 +40,8 @@ class ELM(object):
 				'an unknown activation function \'%s\' was given.' % (activation)
 			)
 
-		self.__x = tf.placeholder(tf.float32, shape=(self._batch_size, self._input_len), name='x')
-		self.__t = tf.placeholder(tf.float32, shape=(self._batch_size, self._output_len), name='t')
+		self.__x = tf.placeholder(tf.float32, shape=(None, self._input_len), name='x')
+		self.__t = tf.placeholder(tf.float32, shape=(None, self._output_len), name='t')
 		
 		self.__inputW = tf.Variable(
 			tf.random_normal([self._input_len, self._hidden_num]),

@@ -22,25 +22,33 @@ input_len = 1024
 output_len = 62
 # number of train-image is 4575
 batch_size = 4575
-hidden_num = 40
-wheels_num = 1
-
+hidden_num = 80
+wheels_num = 10
 # Flatten the input data
 images_flat = tf.contrib.layers.flatten(load.images32)
+test_image_flat = tf.contrib.layers.flatten(load.test_images32)
+for i in range(1,10,1):
+	print()
+	print('-----------------------------------start time---------------------------------------',datetime.datetime.now())
+	print("batch_size : {}".format(batch_size))
+	print("hidden_num : {}".format(hidden_num))
+	print("wheels_num : {}".format(wheels_num))
+	sess = tf.Session()
+	starttime = datetime.datetime.now()
+	elm = ELM(sess, batch_size, input_len, hidden_num, output_len,wheels_num)
 
-print()
-print('-----------------------------------start time---------------------------------------',datetime.datetime.now())
-print("batch_size : {}".format(batch_size))
-print("hidden_num : {}".format(hidden_num))
-print("wheels_num : {}".format(wheels_num))
-elm = ELM(sess, batch_size, input_len, hidden_num, output_len,wheels_num)
+	# one-step feed-forward training
+	train_x = sess.run(images_flat)
+	train_y = load.labels
+	elm.train(train_x, train_y)
 
-# one-step feed-forward training
-train_x = sess.run(images_flat)
-train_y = load.labels
-elm.train(train_x, train_y);
-'''
-# testing
-test_x, test_y = mnist.test.next_batch(batch_size)
-elm.test(test_x, test_y)
-'''
+	# testing
+	test_x = sess.run(test_image_flat)
+	test_y = load.test_labels
+	elm.test(test_x, test_y)
+
+	endtime = datetime.datetime.now()
+	print('time--->',endtime-starttime)
+	hidden_num += 10
+	sess.close()
+	
