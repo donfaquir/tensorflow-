@@ -22,7 +22,7 @@ input_len = 1024
 output_len = 62
 # number of train-image is 4575
 batch_size = 4575
-hidden_num = 80
+hidden_num = 120
 wheels_num = 10
 # Flatten the input data
 images_flat = tf.contrib.layers.flatten(load.images32)
@@ -49,6 +49,7 @@ for i in range(1,10,1):
 
 	endtime = datetime.datetime.now()
 	print('time--->',endtime-starttime)
-	hidden_num += 10
+	#hidden_num += 10
+	wheels_num += 10
 	sess.close()
 	

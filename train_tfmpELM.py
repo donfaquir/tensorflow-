@@ -18,11 +18,12 @@ sess = tf.Session(config = config)
 mnist = input_data.read_data_sets("./MNIST_data", one_hot=True)
 
 # Construct ELM
-batch_size = 500
-hidden_num = 400
-wheels_num = 500
+batch_size = 5000
+hidden_num = 250
+wheels_num = 1
 print("batch_size : {}".format(batch_size))
 print("hidden_num : {}".format(hidden_num))
+print("wheels_num : {}".format(wheels_num))
 elm = ELM(sess, batch_size, 784, hidden_num, 10,wheels_num)
 
 # one-step feed-forward training

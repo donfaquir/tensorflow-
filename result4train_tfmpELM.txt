@@ -172,3 +172,66 @@ exchange happened
 500 training--> 2018-05-09 21:20:59.635082
 Train Accuracy: 0.202000022
 Test Accuracy: 0.101999998
+-------------------------------------------------------------------------- 2018-05-10 10:16:25.223347
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 500
+hidden_num : 400
+first accuracy--> 0.0
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+100 training--> 2018-05-10 10:16:35.925564
+exchange happened
+200 training--> 2018-05-10 10:16:44.610032
+exchange happened
+300 training--> 2018-05-10 10:16:53.565640
+exchange happened
+400 training--> 2018-05-10 10:17:02.745288
+500 training--> 2018-05-10 10:17:12.182313
+Train Accuracy: 0.070000000
+Test Accuracy: 0.000000000
+-------------------------------------------------------------------------- 2018-05-10 10:19:55.635818
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 500
+hidden_num : 400
+first accuracy--> 0.064
+exchange happened
+exchange happened
+exchange happened
+100 training--> 2018-05-10 10:20:06.176464
+exchange happened
+exchange happened
+200 training--> 2018-05-10 10:20:14.851142
+300 training--> 2018-05-10 10:20:23.779695
+400 training--> 2018-05-10 10:20:32.907555
+500 training--> 2018-05-10 10:20:42.313906
+Train Accuracy: 0.209999993
+Test Accuracy: 0.128000006
+-------------------------------------------------------------------------- 2018-05-10 10:21:12.482202
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 500
+hidden_num : 400
+first accuracy--> 0.096
+exchange happened
+exchange happened
+exchange happened
+100 training--> 2018-05-10 10:21:23.119502
+exchange happened
+200 training--> 2018-05-10 10:21:31.841909
+300 training--> 2018-05-10 10:21:40.930956
+exchange happened
+400 training--> 2018-05-10 10:21:50.222033
+500 training--> 2018-05-10 10:21:59.699335
+Train Accuracy: 0.224000007
+Test Accuracy: 0.086000003

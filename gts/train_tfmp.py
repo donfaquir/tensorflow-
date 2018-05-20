@@ -73,7 +73,7 @@ for i in range(len(sample_labels_get)):
     plt.text(40, 10, "Truth:        {0}\nPrediction: {1}".format(truth, prediction),
              fontsize=12, color=color)
     plt.imshow(load.test_images32[sample_indexes[i]], cmap="gray")
-
+    plt.imshow(load.test_images32[sample_indexes[i]], cmap="gray")
 plt.show()
 
 endtime = datetime.datetime.now()

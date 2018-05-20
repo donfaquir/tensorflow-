@@ -97,7 +97,7 @@ class ELM(object):
 		self._assign_outputW = self.__outputW.assign(self._beta_s)
 		
 		self._cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits = self.__predict, labels=self.__t))
-		self._correct_prediction = tf.equal(tf.argmax(self.__predict,1), tf.argmax(self.__t,1))
+		self._correct_prediction = tf.equal(tf.argmax(self.__predict,1), tf.argmax(self.__t,1)) 
 		self._accuracy = tf.reduce_mean(tf.cast(self._correct_prediction, tf.float32))
 		
 		# Finish initial  
@@ -114,8 +114,8 @@ class ELM(object):
 		if not self._is_trained : 
 			# Initialize variables
 			self._sess.run(tf.global_variables_initializer())
-			#self._sess.run(self._assign_outputW, {self.__x:x, self.__t:t})
-			#self._sess.run(self.__predict, feed_dict={self.__x: x})
+			self._sess.run(self._assign_outputW, {self.__x:x, self.__t:t})
+			self._sess.run(self.__predict, feed_dict={self.__x: x})
 			self._max_accuracy = self._sess.run(self._accuracy,{self.__x:x, self.__t:t})
 			#save_path = self._saver.save(self._sess,"./save/model.ckpt")
 			#print("Model save in->",save_path)

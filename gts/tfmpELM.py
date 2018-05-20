@@ -102,8 +102,8 @@ class ELM(object):
 			self._sess.run(self._predict, feed_dict={self._x: x})
 			
 			self._max_accuracy = self._sess.run(self._accuracy,{self._x:x, self._t:t})
-			print('first accuracy-->',self._max_accuracy)
-			
+			#print('first accuracy-->',self._max_accuracy)
+			'''
 			#save_path = self._saver.save(self._sess,"./save/model.ckpt")
 			#print("Model save in->",save_path)
 			i=0
@@ -125,6 +125,7 @@ class ELM(object):
 				
 				if(i%temp == 0):
 					print(i,'training-->',datetime.datetime.now())
+			'''
 			print("Train Accuracy: {:.9f}".format(self._max_accuracy))
 			self._is_trained  = True
 		
@@ -137,5 +138,4 @@ class ELM(object):
 		else:
 			
 			print("Test Accuracy: {:.9f}".format(self._sess.run(self._accuracy,{self._x:x, self._t:t})))
-		
-		
+		return self._sess.run(tf.argmax(self._predict,1),{self._x:x, self._t:t})
