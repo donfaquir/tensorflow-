@@ -59,26 +59,32 @@ sample_labels = [test_y[i] for i in sample_indexes]
 predicted = elm.test(sample_images, sample_labels)
 sample_labels_get = sess.run(tf.argmax(sample_labels,1))
 
+endtime = datetime.datetime.now()
+print('-----------------------------------endtime time---------------------------------------',endtime)
+print('time--->',endtime-starttime)
 print('sample_labels',sample_labels_get)
 print('pre',predicted)
+
+classimgs = load.getClassImg()
 
 # Display the predictions and the ground truth visually.
 fig = plt.figure(figsize=(10, 10))
 for i in range(len(sample_labels_get)):
     truth = sample_labels_get[i]
     prediction = predicted[i]
-    plt.subplot(5, 2, 1 + i)
+    plt.subplot(10, 2, 1 + 2*i)
     plt.axis('off')
     color = 'green' if truth == prediction else 'red'
-    plt.text(40, 10, "Truth:        {0}\nPrediction: {1}".format(truth, prediction),
+    plt.text(40, 25, "<------Truth:   {0}\n                Prediction:   {1}------>".format(truth,prediction),
              fontsize=12, color=color)
     plt.imshow(load.test_images32[sample_indexes[i]], cmap="gray")
-    plt.imshow(load.test_images32[sample_indexes[i]], cmap="gray")
+   
+    plt.subplot(10, 2, 2 + 2*i)
+    plt.axis('off')
+    plt.imshow(classimgs[predicted[i]], cmap="gray")
 plt.show()
 
-endtime = datetime.datetime.now()
-print('-----------------------------------endtime time---------------------------------------',endtime)
-print('time--->',endtime-starttime)
+
 sess.close()
 	#wheels_num += 10
 

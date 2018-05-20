@@ -9,7 +9,22 @@ from skimage import data,transform
 from skimage.color import rgb2gray     #rgb2gray将图片转化为灰度
 
 class Load(object):
-
+	def getClassImg(self):
+		'''
+			get one image from each calsss
+		'''
+		img = []
+		directories=[d for d in os.listdir(self._train_data_directory) if os.path.isdir(os.path.join(self._train_data_directory,d))]
+		
+		for d in directories:
+			#每一类的路径
+			label_directory=os.path.join(self._train_data_directory,d)
+			file_names=[os.path.join(label_directory,f) for f in os.listdir(label_directory) if f.endswith(".ppm")]
+			#file_names is every photo which is end with ".ppm"
+			for f in file_names:
+				img.append(skimage.data.imread(f)) 
+				break
+		return img
 	def getLable(self,d):
 		a = []
 		for i in range(0,62):
@@ -19,6 +34,9 @@ class Load(object):
 		return a
 		
 	def load_data(self,data_directory):
+		'''
+			load all image under the data_directory
+		'''
 		directories=[d for d in os.listdir(data_directory) if os.path.isdir(os.path.join(data_directory,d))]
 		#d is every classification file
 		labels=[]
