@@ -1,0 +1,629 @@
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 5000
+hidden_num : 200
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+20 training--> 2018-05-07 12:20:29.760097
+40 training--> 2018-05-07 12:25:43.978890
+exchange happened
+60 training--> 2018-05-07 12:30:55.448402
+80 training--> 2018-05-07 12:36:05.713822
+100 training--> 2018-05-07 12:41:15.861877
+Train Accuracy: 0.564799905
+Test Accuracy: 0.423799932
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 5000
+hidden_num : 200
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+40 training--> 2018-05-07 13:09:13.401634
+exchange happened
+80 training--> 2018-05-07 13:26:29.035579
+exchange happened
+exchange happened
+120 training--> 2018-05-07 13:43:24.574235
+160 training--> 2018-05-07 14:01:17.786996
+200 training--> 2018-05-07 14:14:52.837650
+Train Accuracy: 0.627399921
+Test Accuracy: 0.410999984
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 5000
+hidden_num : 200
+exchange happened
+exchange happened
+exchange happened
+50 training--> 2018-05-07 15:44:26.446252
+100 training--> 2018-05-07 15:57:50.217782
+150 training--> 2018-05-07 16:18:20.090265
+200 training--> 2018-05-07 16:39:03.822288
+exchange happened
+250 training--> 2018-05-07 16:59:07.538225
+Train Accuracy: 0.670599878
+Test Accuracy: 0.146999985
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 5000
+hidden_num : 200
+exchange happened
+exchange happened
+60 training--> 2018-05-08 09:18:45.937815
+120 training--> 2018-05-08 09:34:05.400737
+exchange happened
+180 training--> 2018-05-08 09:49:21.988632
+240 training--> 2018-05-08 10:04:41.573996
+300 training--> 2018-05-08 10:27:38.317352
+Train Accuracy: 0.640199840
+Test Accuracy: 0.221399993Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-------------------------------------------------------------------------- 2018-05-08 10:30:23.753549
+batch_size : 5000
+hidden_num : 200
+exchange happened
+exchange happened
+exchange happened
+70 training--> 2018-05-08 10:49:30.803954
+exchange happened
+140 training--> 2018-05-08 11:08:04.443516
+210 training--> 2018-05-08 11:26:50.156363
+280 training--> 2018-05-08 11:45:22.961186
+exchange happened
+350 training--> 2018-05-08 12:03:55.958678
+Train Accuracy: 0.645199895
+Test Accuracy: 0.210999995
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-------------------------------------------------------------------------- 2018-05-08 12:06:13.721055
+batch_size : 5000
+hidden_num : 200
+wheels_num : 400
+exchange happened
+80 training--> 2018-05-08 12:27:41.332528
+exchange happened
+160 training--> 2018-05-08 12:48:53.165741
+exchange happened
+exchange happened
+240 training--> 2018-05-08 13:11:28.409770
+320 training--> 2018-05-08 13:32:32.251142
+400 training--> 2018-05-08 13:53:04.736147
+Train Accuracy: 0.595199943
+Test Accuracy: 0.415999979
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-------------------------------------------------------------------------- 2018-05-08 13:54:39.845800
+batch_size : 5000
+hidden_num : 200
+wheels_num : 450
+exchange happened
+exchange happened
+exchange happened
+90 training--> 2018-05-08 14:18:14.015304
+180 training--> 2018-05-08 14:41:57.310527
+270 training--> 2018-05-08 15:05:55.940897
+360 training--> 2018-05-08 15:30:13.913745
+exchange happened
+450 training--> 2018-05-08 15:53:58.535305
+Train Accuracy: 0.586799920
+Test Accuracy: 0.438799948
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-------------------------------------------------------------------------- 2018-05-08 16:14:34.485218
+batch_size : 5000
+hidden_num : 250
+wheels_num : 250
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+50 training--> 2018-05-08 16:28:23.929174
+exchange happened
+100 training--> 2018-05-08 16:41:59.602053
+exchange happened
+150 training--> 2018-05-08 16:55:12.282375
+exchange happened
+200 training--> 2018-05-08 17:08:31.975212
+250 training--> 2018-05-08 17:22:23.394916
+Train Accuracy: 0.618199944
+Test Accuracy: 0.210400000
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-------------------------------------------------------------------------- 2018-05-08 17:30:10.856454
+batch_size : 5000
+hidden_num : 300
+wheels_num : 250
+exchange happened
+exchange happened
+50 training--> 2018-05-08 17:43:35.657905
+100 training--> 2018-05-08 17:56:26.478620
+exchange happened
+150 training--> 2018-05-08 18:09:13.908675
+200 training--> 2018-05-08 18:22:00.869992
+250 training--> 2018-05-08 18:37:08.301556
+Train Accuracy: 0.477399945
+Test Accuracy: 0.273999989
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-------------------------------------------------------------------------- 2018-05-08 18:41:23.646635
+batch_size : 5000
+hidden_num : 350
+wheels_num : 250
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+50 training--> 2018-05-08 18:57:01.296060
+exchange happened
+100 training--> 2018-05-08 19:12:22.771044
+150 training--> 2018-05-08 19:25:30.389189
+200 training--> 2018-05-08 19:38:27.236972
+250 training--> 2018-05-08 19:51:14.336167
+Train Accuracy: 0.510199964
+Test Accuracy: 0.171999991
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-------------------------------------------------------------------------- 2018-05-08 20:01:23.906297
+batch_size : 5000
+hidden_num : 400
+wheels_num : 250
+exchange happened
+exchange happened
+50 training--> 2018-05-08 20:14:43.024201
+exchange happened
+100 training--> 2018-05-08 20:28:53.063630
+exchange happened
+150 training--> 2018-05-08 20:42:41.004012
+200 training--> 2018-05-08 20:56:44.970768
+250 training--> 2018-05-08 21:11:15.044793
+Train Accuracy: 0.389999986
+Test Accuracy: 0.180999979
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-------------------------------------------------------------------------- 2018-05-08 21:22:18.363490
+batch_size : 5000
+hidden_num : 50
+wheels_num : 250
+exchange happened
+exchange happened
+exchange happened
+exchange happened
+50 training--> 2018-05-08 21:37:09.787656
+exchange happened
+100 training--> 2018-05-08 21:52:07.753537
+150 training--> 2018-05-08 22:06:14.106493
+exchange happened
+200 training--> 2018-05-08 22:20:15.725275
+250 training--> 2018-05-08 22:34:06.517046
+Train Accuracy: 0.601799905
+Test Accuracy: 0.268200010
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-------------------------------------------------------------------------- 2018-05-08 22:36:39.539899
+batch_size : 5000
+hidden_num : 100
+wheels_num : 250
+exchange happened
+exchange happened
+exchange happened
+50 training--> 2018-05-08 22:50:47.893891
+exchange happened
+100 training--> 2018-05-08 23:05:02.421651
+exchange happened
+150 training--> 2018-05-08 23:21:03.396460
+200 training--> 2018-05-08 23:35:05.014805
+exchange happened
+250 training--> 2018-05-08 23:48:43.351669
+Train Accuracy: 0.660599887
+Test Accuracy: 0.499599963
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-------------------------------------------------------------------------- 2018-05-09 10:46:18.655277
+batch_size : 5000
+hidden_num : 150
+wheels_num : 250
+exchange happened
+50 training--> 2018-05-09 10:59:26.973361
+exchange happened
+100 training--> 2018-05-09 11:12:12.528396
+150 training--> 2018-05-09 11:25:00.682836
+exchange happened
+200 training--> 2018-05-09 11:37:55.140619
+250 training--> 2018-05-09 11:50:39.739954
+Train Accuracy: 0.658999920
+Test Accuracy: 0.504599929
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-------------------------------------------------------------------------- 2018-05-10 11:44:59.701811
+batch_size : 5000
+hidden_num : 250
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.356399983
+Test Accuracy: 0.358599991
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-------------------------------------------------------------------------- 2018-05-10 11:48:30.700116
+batch_size : 5000
+hidden_num : 250
+wheels_num : 50
+exchange happened
+Train Accuracy: 0.849199772
+Test Accuracy: 0.827599823
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-------------------------------------------------------------------------- 2018-05-10 11:50:10.816836
+batch_size : 5000
+hidden_num : 250
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.846199811
+Test Accuracy: 0.836999834
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-------------------------------------------------------------------------- 2018-05-10 11:51:52.359766
+batch_size : 5000
+hidden_num : 250
+wheels_num : 50
+exchange happened
+10 training--> 2018-05-10 11:54:36.495451
+exchange happened
+exchange happened
+20 training--> 2018-05-10 11:57:17.308476
+30 training--> 2018-05-10 11:59:52.518505
+40 training--> 2018-05-10 12:02:30.051139
+50 training--> 2018-05-10 12:05:04.976389
+Train Accuracy: 0.868599772
+Test Accuracy: 0.837999821
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:12:57.089862
+batch_size : 5000
+hidden_num : 50
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.758799791
+Test Accuracy: 0.763999879
+-------------------------------end time------------------------------------------- 2018-05-10 21:13:20.202063
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:14:48.295238
+batch_size : 5000
+hidden_num : 100
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.827199817
+Test Accuracy: 0.827399790
+-------------------------------end time------------------------------------------- 2018-05-10 21:15:11.614220
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:16:00.544721
+batch_size : 5000
+hidden_num : 150
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.851199746
+Test Accuracy: 0.838199854
+-------------------------------end time------------------------------------------- 2018-05-10 21:16:23.553982
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:17:58.014499
+batch_size : 5000
+hidden_num : 200
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.870199740
+Test Accuracy: 0.840599775
+-------------------------------end time------------------------------------------- 2018-05-10 21:18:19.950564
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:19:25.836348
+batch_size : 5000
+hidden_num : 250
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.840399802
+Test Accuracy: 0.815599799
+-------------------------------end time------------------------------------------- 2018-05-10 21:19:47.344105
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:20:08.888493
+batch_size : 5000
+hidden_num : 300
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.833799839
+Test Accuracy: 0.809999824
+-------------------------------end time------------------------------------------- 2018-05-10 21:20:28.643811
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:20:44.306679
+batch_size : 5000
+hidden_num : 350
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.833599806
+Test Accuracy: 0.800399840
+-------------------------------end time------------------------------------------- 2018-05-10 21:21:04.118634
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:21:27.127163
+batch_size : 5000
+hidden_num : 400
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.866999745
+Test Accuracy: 0.823399782
+-------------------------------end time------------------------------------------- 2018-05-10 21:21:47.076207
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:22:14.183730
+batch_size : 5000
+hidden_num : 450
+wheels_num : 1
+Train Accuracy: 0.102600008
+Test Accuracy: 0.104199998
+-------------------------------end time------------------------------------------- 2018-05-10 21:22:34.034908
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:22:56.781229
+batch_size : 5000
+hidden_num : 500
+wheels_num : 1
+Train Accuracy: 0.089199990
+Test Accuracy: 0.097399995
+-------------------------------end time------------------------------------------- 2018-05-10 21:23:16.720483
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:23:45.128521
+batch_size : 5000
+hidden_num : 550
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.118399993
+Test Accuracy: 0.116200000
+-------------------------------end time------------------------------------------- 2018-05-10 21:24:05.359905
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:24:33.844726
+batch_size : 5000
+hidden_num : 700
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.126999989
+Test Accuracy: 0.123999998
+-------------------------------end time------------------------------------------- 2018-05-10 21:24:53.769556
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:25:14.457749
+batch_size : 5000
+hidden_num : 900
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.123399988
+Test Accuracy: 0.139199987
+-------------------------------end time------------------------------------------- 2018-05-10 21:25:15.749721
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:25:35.543055
+batch_size : 5000
+hidden_num : 1100
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.161999986
+Test Accuracy: 0.158999994
+-------------------------------end time------------------------------------------- 2018-05-10 21:25:37.019906
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:25:58.578581
+batch_size : 5000
+hidden_num : 1500
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.201999992
+Test Accuracy: 0.197199985
+-------------------------------end time------------------------------------------- 2018-05-10 21:26:00.551593
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:26:44.713079
+batch_size : 5000
+hidden_num : 2000
+wheels_num : 1
+Train Accuracy: 0.097599991
+Test Accuracy: 0.087399989
+-------------------------------end time------------------------------------------- 2018-05-10 21:26:47.572565
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:27:04.063175
+batch_size : 5000
+hidden_num : 3000
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.184399992
+Test Accuracy: 0.176599994
+-------------------------------end time------------------------------------------- 2018-05-10 21:27:10.304602
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:27:29.118788
+batch_size : 5000
+hidden_num : 3500
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.116999999
+Test Accuracy: 0.111599997
+-------------------------------end time------------------------------------------- 2018-05-10 21:27:37.916283
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:27:54.975730
+batch_size : 5000
+hidden_num : 4500
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.102199994
+Test Accuracy: 0.096199989
+-------------------------------end time------------------------------------------- 2018-05-10 21:28:11.396037
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:28:52.827333
+batch_size : 5000
+hidden_num : 10
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.461199969
+Test Accuracy: 0.458199978
+-------------------------------end time------------------------------------------- 2018-05-10 21:29:12.754374
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:29:31.743093
+batch_size : 5000
+hidden_num : 20
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.684999883
+Test Accuracy: 0.678799808
+-------------------------------end time------------------------------------------- 2018-05-10 21:29:51.401955
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:30:07.303793
+batch_size : 5000
+hidden_num : 30
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.673799992
+Test Accuracy: 0.672999859
+-------------------------------end time------------------------------------------- 2018-05-10 21:30:28.394582
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+
+-----------------------------------start time--------------------------------------- 2018-05-10 21:32:13.395220
+batch_size : 5000
+hidden_num : 40
+wheels_num : 1
+exchange happened
+Train Accuracy: 0.743999839
+Test Accuracy: 0.736999810
+-------------------------------end time------------------------------------------- 2018-05-10 21:32:33.705311

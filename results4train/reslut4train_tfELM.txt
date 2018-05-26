@@ -1,0 +1,115 @@
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 5000
+hidden_num : 150
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 5000
+hidden_num : 150
+Accuracy: 0.296999991
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 5000
+hidden_num : 150
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 5000
+hidden_num : 150
+Model save in-> ./save/model.ckpt
+Model save in-> ./save/model.ckpt
+Accuracy: 0.360600024
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 5000
+hidden_num : 150
+Model save in-> ./save/model.ckpt
+1 trainingj 2018-05-06 19:22:14.224058
+2 trainingj 2018-05-06 19:22:14.245572
+3 trainingj 2018-05-06 19:22:14.267588
+4 trainingj 2018-05-06 19:22:14.289103
+5 trainingj 2018-05-06 19:22:14.310618
+6 trainingj 2018-05-06 19:22:14.332634
+7 trainingj 2018-05-06 19:22:14.354650
+8 trainingj 2018-05-06 19:22:14.376166
+9 trainingj 2018-05-06 19:22:14.397680
+10 trainingj 2018-05-06 19:22:14.419196
+Accuracy: 0.399600029
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 5000
+hidden_num : 150
+Model save in-> ./save/model.ckpt
+1 trainingj 2018-05-06 19:28:16.412207
+Model save in-> ./save/model.ckpt
+2 trainingj 2018-05-06 19:28:18.634488
+3 trainingj 2018-05-06 19:28:18.656003
+4 trainingj 2018-05-06 19:28:18.677518
+5 trainingj 2018-05-06 19:28:18.699033
+6 trainingj 2018-05-06 19:28:18.720549
+7 trainingj 2018-05-06 19:28:18.742064
+8 trainingj 2018-05-06 19:28:18.763581
+9 trainingj 2018-05-06 19:28:18.785096
+10 trainingj 2018-05-06 19:28:18.806110
+Accuracy: 0.298999995
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 5000
+hidden_num : 150
+Model save in-> ./save/model.ckpt
+1 trainingj 2018-05-06 19:34:09.669788
+Model save in-> ./save/model.ckpt
+2 trainingj 2018-05-06 19:34:27.819070
+Model save in-> ./save/model.ckpt
+99 trainingj 2018-05-06 19:59:49.376228
+100 trainingj 2018-05-06 20:00:06.885335
+Accuracy: 0.656999886
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 5000
+hidden_num : 150
+Model save in-> ./save/model.ckpt
+1 trainingj 2018-05-06 21:15:25.552229
+Model save in-> ./save/model.ckpt
+2 trainingj 2018-05-06 21:15:42.857859
+Model save in-> ./save/model.ckpt
+3 trainingj 2018-05-06 21:16:00.046851
+4 trainingj 2018-05-06 21:16:15.454549
+5 trainingj 2018-05-06 21:16:30.962780
+Model save in-> ./save/model.ckpt
+6 trainingj 2018-05-06 21:16:48.181711
+7
+200 trainingj 2018-05-06 22:07:33.197153
+Accuracy: 0.620999873
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 5000
+hidden_num : 150
+Model save in-> ./save/model.ckpt
+Model save in-> ./save/model.ckpt
+1 trainingj 2018-05-06 22:09:37.239796
+Model save in-> ./save/model.ckpt
+2 trainingj 2018-05-06 22:09:54.738368
+Model save in-> ./save/model.ckpt
+3 trainingj 2018-05-06 22:10:12.417513
+
+199 trainingj 2018-05-06 23:28:19.398302
+200 trainingj 2018-05-06 23:28:49.011405
+Accuracy: 0.696399808

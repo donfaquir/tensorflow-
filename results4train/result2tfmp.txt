@@ -1,0 +1,135 @@
+Extracting ./MNIST_data\train-images-idx3-ubyte.gz
+Extracting ./MNIST_data\train-labels-idx1-ubyte.gz
+Extracting ./MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting ./MNIST_data\t10k-labels-idx1-ubyte.gz
+batch_size : 3000
+hidden_num : 100
+wheels_num : 1
+------------------------------------------- 2018-05-22 12:35:37.827372
+first accuracy--> 0.83533335
+exchange happened
+Train Accuracy: 0.836666703
+Test Accuracy: 0.816666722
+costtime 0:00:01.005420
+batch_size : 3000
+hidden_num : 150
+wheels_num : 1
+------------------------------------------- 2018-05-22 12:35:38.836790
+first accuracy--> 0.8536667
+exchange happened
+Train Accuracy: 0.863666773
+Test Accuracy: 0.846000016
+costtime 0:00:00.183892
+batch_size : 3000
+hidden_num : 200
+wheels_num : 1
+------------------------------------------- 2018-05-22 12:35:39.025681
+first accuracy--> 0.8726667
+exchange happened
+Train Accuracy: 0.875000119
+Test Accuracy: 0.823666751
+costtime 0:00:00.217874
+batch_size : 3000
+hidden_num : 250
+wheels_num : 1
+------------------------------------------- 2018-05-22 12:35:39.250551
+first accuracy--> 0.8853334
+Train Accuracy: 0.885333419
+Test Accuracy: 0.837333381
+costtime 0:00:00.358451
+batch_size : 3000
+hidden_num : 300
+wheels_num : 1
+------------------------------------------- 2018-05-22 12:35:39.616034
+first accuracy--> 0.901
+Train Accuracy: 0.901000023
+Test Accuracy: 0.828000128
+costtime 0:00:00.361790
+batch_size : 3000
+hidden_num : 350
+wheels_num : 1
+------------------------------------------- 2018-05-22 12:35:39.983822
+first accuracy--> 0.9056667
+exchange happened
+Train Accuracy: 0.909333408
+Test Accuracy: 0.826000035
+costtime 0:00:00.373784
+batch_size : 3000
+hidden_num : 400
+wheels_num : 1
+------------------------------------------- 2018-05-22 12:35:40.362602
+first accuracy--> 0.89933336
+exchange happened
+Train Accuracy: 0.901000023
+Test Accuracy: 0.822000027
+costtime 0:00:00.375808
+batch_size : 3000
+hidden_num : 450
+wheels_num : 1
+------------------------------------------- 2018-05-22 12:35:40.743406
+first accuracy--> 0.91766673
+exchange happened
+Train Accuracy: 0.917666793
+Test Accuracy: 0.827000022
+costtime 0:00:00.364789
+batch_size : 3000
+hidden_num : 500
+wheels_num : 1
+------------------------------------------- 2018-05-22 12:35:41.114194
+first accuracy--> 0.9163333
+exchange happened
+Train Accuracy: 0.916666687
+Test Accuracy: 0.824000061
+costtime 0:00:00.402768
+batch_size : 3000
+hidden_num : 550
+wheels_num : 1
+------------------------------------------- 2018-05-22 12:35:41.521957
+first accuracy--> 0.9173334
+Train Accuracy: 0.917333424
+Test Accuracy: 0.812666714
+costtime 0:00:00.458735
+batch_size : 3000
+hidden_num : 600
+wheels_num : 1
+------------------------------------------- 2018-05-22 12:35:41.986703
+first accuracy--> 0.15966667
+exchange happened
+Train Accuracy: 0.925333381
+Test Accuracy: 0.795000017
+costtime 0:00:00.521684
+batch_size : 3000
+hidden_num : 650
+wheels_num : 1
+------------------------------------------- 2018-05-22 12:35:42.514384
+first accuracy--> 0.7223333
+Train Accuracy: 0.722333312
+Test Accuracy: 0.278333306
+costtime 0:00:00.567672
+batch_size : 3000
+hidden_num : 700
+wheels_num : 1
+------------------------------------------- 2018-05-22 12:35:43.085055
+first accuracy--> 0.118333325
+exchange happened
+Train Accuracy: 0.894666731
+Test Accuracy: 0.770666718
+costtime 0:00:00.638630
+batch_size : 3000
+hidden_num : 750
+wheels_num : 1
+------------------------------------------- 2018-05-22 12:35:43.728683
+first accuracy--> 0.089
+exchange happened
+Train Accuracy: 0.274999976
+Test Accuracy: 0.237999976
+costtime 0:00:00.702595
+batch_size : 3000
+hidden_num : 800
+wheels_num : 1
+------------------------------------------- 2018-05-22 12:35:44.435275
+first accuracy--> 0.11366666
+exchange happened
+Train Accuracy: 0.252666652
+Test Accuracy: 0.239666671
+costtime 0:00:00.770554
